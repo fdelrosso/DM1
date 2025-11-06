@@ -1,56 +1,56 @@
 \begin{table}
 \caption{Descrizione delle variabili del dataset dei giochi da tavolo.}
 \label{tab:variables}
-\begin{tabular}{p{3cm}p{2cm}p{9cm}}
+\begin{tabular}{p{3cm}p{2cm}p{2.5cm}p{2.5cm}p{8cm}}
 \toprule
-Variabile & Tipo & Descrizione \\
+Variabile & Tipo & TipoAttributo & TipoValore & Descrizione \\
 \midrule
-BGGId & int64 & Identificativo univoco del gioco su BoardGameGeek \\
-Name & object & Nome del gioco da tavolo \\
-Description & object & Breve descrizione del gioco \\
-YearPublished & int64 & Anno di pubblicazione \\
-GameWeight & float64 & Livello di complessità percepita (scala da 1 a 5) \\
-ComWeight & float64 & Complessità media secondo la community \\
-MinPlayers & int64 & Numero minimo di giocatori richiesto \\
-MaxPlayers & int64 & Numero massimo di giocatori supportato \\
-ComAgeRec & float64 & Età minima consigliata dalla community \\
-LanguageEase & float64 & Language requirement \\
-BestPlayers & int64 & Numero di migliori giocatori votato dalla community \\
-GoodPlayers & object & Numero di migliori giocatori votati \\
-NumOwned & int64 & Numero di utenti che possiedono il gioco \\
-NumWant & int64 & Numero di utenti che vorrebbero il gioco \\
-NumWish & int64 & Numero di utenti che hanno intenzione di acquistare il gioco \\
-NumWeightVotes & int64 & Number of votes for the weight category received by users \\
-MfgPlaytime & int64 & — \\
-ComMinPlaytime & int64 & Tempo medio di gioco della community \\
-ComMaxPlaytime & int64 & — \\
-MfgAgeRec & int64 & Manufacturer Age Recommendation \\
-NumUserRatings & int64 & Number of user ratings \\
-NumComments & int64 & Number of user comments \\
-NumAlternates & int64 & Number of alternate versions \\
-NumExpansions & int64 & Numero di espansioni \\
-NumImplementations & int64 & Number of implementazioni \\
-IsReimplementation & int64 & Is this game presenting a reimplementation? \\
-Family & object & Famiglia di gioco a cui appartiene \\
-Kickstarted & int64 & Is this game from a kickstarter (crowdfunding campaign) project? \\
-ImagePath & object & Image http:// path \\
-Rank:strategygames & int64 & Posizione nel ranking categoria strategy games \\
-Rank:abstracts & int64 & Posizione nel ranking categoria abstracts \\
-Rank:familygames & int64 & Posizione nel ranking categoria Family \\
-Rank:thematic & int64 & Posizione nel ranking in thematic \\
-Rank:cgs & int64 & Posizione nel ranking in card games \\
-Rank:wargames & int64 & Posizione nel ranking in war games \\
-Rank:partygames & int64 & Posizione nel ranking in party games \\
-Rank:childrensgames & int64 & Posizione nel ranking in children's games \\
-Cat:Thematic & int64 & 1 se appartiene alla categoria Thematic, 0 altrimenti \\
-Cat:Strategy & int64 & 1 se appartiene alla categoria Strategy, 0 altrimenti \\
-Cat:War & int64 & 1 se appartiene alla categoria War, 0 altrimenti \\
-Cat:Family & int64 & 1 se appartiene alla categoria Family, 0 altrimenti \\
-Cat:CGS & int64 & 1 se appartiene alla categoria Card Games, 0 altrimenti \\
-Cat:Abstract & int64 & 1 se appartiene alla categoria Abstract, 0 altrimenti \\
-Cat:Party & int64 & 1 se appartiene alla categoria Party, 0 altrimenti \\
-Cat:Childrens & int64 & 1 se appartiene alla categoria Children’s, 0 altrimenti \\
-Rating & object & Rating del gioco(low, medium, high) \\
+BGGId & int64 & numerical & discreto & Identificativo univoco del gioco su BoardGameGeek \\
+Name & object & categorical & — & Nome del gioco da tavolo \\
+Description & object & categorical & — & Breve descrizione del gioco \\
+YearPublished & int64 & categorical & — & Anno di pubblicazione \\
+GameWeight & float64 & numerical & continuo & Livello di complessità percepita (scala da 1 a 5) \\
+ComWeight & float64 & numerical & continuo & Complessità media secondo la community \\
+MinPlayers & int64 & categorical & — & Numero minimo di giocatori richiesto \\
+MaxPlayers & int64 & categorical & — & Numero massimo di giocatori supportato \\
+ComAgeRec & float64 & numerical & continuo & Età minima consigliata dalla community \\
+LanguageEase & float64 & numerical & continuo & Language requirement \\
+BestPlayers & int64 & categorical & — & Numero di migliori giocatori votato dalla community \\
+GoodPlayers & object & categorical & — & Numero di migliori giocatori votati \\
+NumOwned & int64 & numerical & discreto & Numero di utenti che possiedono il gioco \\
+NumWant & int64 & categorical & — & Numero di utenti che vorrebbero il gioco \\
+NumWish & int64 & numerical & discreto & Numero di utenti che hanno intenzione di acquistare il gioco \\
+NumWeightVotes & int64 & categorical & — & Number of votes for the weight category received by users \\
+MfgPlaytime & int64 & categorical & — & — \\
+ComMinPlaytime & int64 & categorical & — & Tempo medio di gioco della community \\
+ComMaxPlaytime & int64 & categorical & — & — \\
+MfgAgeRec & int64 & categorical & — & Manufacturer Age Recommendation \\
+NumUserRatings & int64 & numerical & discreto & Number of user ratings \\
+NumComments & int64 & categorical & — & Number of user comments \\
+NumAlternates & int64 & categorical & — & Number of alternate versions \\
+NumExpansions & int64 & categorical & — & Numero di espansioni \\
+NumImplementations & int64 & categorical & — & Number of implementazioni \\
+IsReimplementation & int64 & categorical & — & Is this game presenting a reimplementation? \\
+Family & object & categorical & — & Famiglia di gioco a cui appartiene \\
+Kickstarted & int64 & categorical & — & Is this game from a kickstarter (crowdfunding campaign) project? \\
+ImagePath & object & categorical & — & Image http:// path \\
+Rank:strategygames & int64 & numerical & discreto & Posizione nel ranking categoria strategy games \\
+Rank:abstracts & int64 & numerical & discreto & Posizione nel ranking categoria abstracts \\
+Rank:familygames & int64 & numerical & discreto & Posizione nel ranking categoria Family \\
+Rank:thematic & int64 & numerical & discreto & Posizione nel ranking in thematic \\
+Rank:cgs & int64 & categorical & — & Posizione nel ranking in card games \\
+Rank:wargames & int64 & numerical & discreto & Posizione nel ranking in war games \\
+Rank:partygames & int64 & categorical & — & Posizione nel ranking in party games \\
+Rank:childrensgames & int64 & categorical & — & Posizione nel ranking in children's games \\
+Cat:Thematic & int64 & categorical & — & 1 se appartiene alla categoria Thematic, 0 altrimenti \\
+Cat:Strategy & int64 & categorical & — & 1 se appartiene alla categoria Strategy, 0 altrimenti \\
+Cat:War & int64 & categorical & — & 1 se appartiene alla categoria War, 0 altrimenti \\
+Cat:Family & int64 & categorical & — & 1 se appartiene alla categoria Family, 0 altrimenti \\
+Cat:CGS & int64 & categorical & — & 1 se appartiene alla categoria Card Games, 0 altrimenti \\
+Cat:Abstract & int64 & categorical & — & 1 se appartiene alla categoria Abstract, 0 altrimenti \\
+Cat:Party & int64 & categorical & — & 1 se appartiene alla categoria Party, 0 altrimenti \\
+Cat:Childrens & int64 & categorical & — & 1 se appartiene alla categoria Children’s, 0 altrimenti \\
+Rating & object & categorical & — & Rating del gioco (low, medium, high) \\
 \bottomrule
 \end{tabular}
 \end{table}
